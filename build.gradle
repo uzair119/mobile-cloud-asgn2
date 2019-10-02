@@ -45,6 +45,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.data:spring-data-rest-webmvc")
     compile("org.springframework.boot:spring-boot-starter-security")
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
     
     compile("org.springframework.security.oauth:spring-security-oauth2:2.3.4.RELEASE")
     
@@ -67,6 +68,7 @@ dependencies {
     testCompile("junit:junit")
 }
 
-task wrapper(type: Wrapper) {
+task wrapper2(type: Wrapper) {
     gradleVersion = '5.0'
 }
+mainClassName = 'org.magnum.dataup.Application'

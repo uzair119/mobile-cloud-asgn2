@@ -86,23 +86,23 @@ public class Video {
 	public long getLikes() {
 		return likes;
 	}
-	
+
 	public void setLikes(long likes) {
 		this.likes = likes;
 	}
-	
+
 	public Set<String> getLikedBy() {
 		return likedBy;
 	}
-	
+
 	public void setLikedBy(Set<String> likedBy) {
 		this.likedBy = likedBy;
 	}
-	
+
 	/**
 	 * Two Videos will generate the same hashcode if they have exactly the same
 	 * values for their name, url, and duration.
-	 * 
+	 *
 	 */
 	@Override
 	public int hashCode() {
@@ -112,7 +112,7 @@ public class Video {
 	/**
 	 * Two Videos are considered equal if they have exactly the same values for
 	 * their name, url, and duration.
-	 * 
+	 *
 	 */
 	@Override
 	public boolean equals(Object obj) {
